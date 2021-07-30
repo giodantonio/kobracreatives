@@ -197,6 +197,8 @@ header {
 /* -------------------- About Us section */
 #about {
 	background-color: var(--first-color);
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 
@@ -240,6 +242,8 @@ header {
 }
 /* -------------------- services section */
 #services {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 
@@ -260,6 +264,8 @@ header {
 /* -------------------- Projects section */
 #projects {
 	background-color: var(--dark-color);
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 
@@ -270,7 +276,8 @@ header {
 .project-card__img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	opacity: 1;
 }
 
@@ -328,9 +335,6 @@ header {
 }
 
 .transition {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -362,7 +366,8 @@ header {
 	font-size: .85rem;
 }
 .carousel__modal-img {
-	object-fit: contain;
+	-o-object-fit: contain;
+	   object-fit: contain;
 	width: 70%;
 	height: 100%;
 }
@@ -397,6 +402,8 @@ header {
 /* -------------------- Clients section */
 #clients {
 	background-color: var(--third-color);
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 
@@ -508,6 +515,8 @@ header {
 	background-position: center top;
     background-attachment: fixed;
     background-color: var(--dark-color);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -528,6 +537,22 @@ header {
 	padding-bottom: 1.25rem;
 	background-color: transparent;
 	transition: all .5s ease-in-out;
+}
+
+.input::-webkit-input-placeholder {
+	color: var(--text-color-alt);
+}
+
+.input::-moz-placeholder {
+	color: var(--text-color-alt);
+}
+
+.input:-ms-input-placeholder {
+	color: var(--text-color-alt);
+}
+
+.input::-ms-input-placeholder {
+	color: var(--text-color-alt);
 }
 
 .input::placeholder {
@@ -604,6 +629,18 @@ footer p {
 	font-size: 15px;
 	color: var(--light-color);
 }
+.input-subs::-webkit-input-placeholder {
+	color: var(--text-color-alt);
+}
+.input-subs::-moz-placeholder {
+	color: var(--text-color-alt);
+}
+.input-subs:-ms-input-placeholder {
+	color: var(--text-color-alt);
+}
+.input-subs::-ms-input-placeholder {
+	color: var(--text-color-alt);
+}
 .input-subs::placeholder {
 	color: var(--text-color-alt);
 }
@@ -621,32 +658,24 @@ i.far.fa-envelope {
 */
 @-webkit-keyframes swing-in-top-fwd {
 	0% {
-		-webkit-transform: rotateX(-100deg);
 		transform: rotateX(-100deg);
-		-webkit-transform-origin: top;
 		transform-origin: top;
 		opacity: 0;
 	}
 	100% {
-		-webkit-transform: rotateX(0deg);
 		transform: rotateX(0deg);
-		-webkit-transform-origin: top;
 		transform-origin: top;
 		opacity: 1;
 	}
 }
 @keyframes swing-in-top-fwd {
 	0% {
-		-webkit-transform: rotateX(-100deg);
 		transform: rotateX(-100deg);
-		-webkit-transform-origin: top;
 		transform-origin: top;
 		opacity: 0;
 	}
 	100% {
-		-webkit-transform: rotateX(0deg);
 		transform: rotateX(0deg);
-		-webkit-transform-origin: top;
 		transform-origin: top;
 		opacity: 1;
 	}
@@ -659,33 +688,25 @@ i.far.fa-envelope {
  */
 @-webkit-keyframes swing-out-top-bck {
     0% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
+      transform: rotateX(0deg);
+      transform-origin: top;
       opacity: 1;
     }
     100% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
+      transform: rotateX(-100deg);
+      transform-origin: top;
       opacity: 0;
     }
 }
 @keyframes swing-out-top-bck {
     0% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
+      transform: rotateX(0deg);
+      transform-origin: top;
       opacity: 1;
     }
     100% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
+      transform: rotateX(-100deg);
+      transform-origin: top;
       opacity: 0;
     }
 }
@@ -697,29 +718,23 @@ i.far.fa-envelope {
  */
 @-webkit-keyframes pulse {
     0% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     50% {
-		-webkit-transform: translate(0, 10px);
 		transform: translate(0, 10px);
     }
     100% {
-		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
     }
 }
 @keyframes pulse {
     0% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     50% {
-		-webkit-transform: translate(0, 10px);
 		transform: translate(0, 10px);
     }
     100% {
-		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
     }
 }
